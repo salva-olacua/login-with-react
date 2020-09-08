@@ -1,7 +1,10 @@
-const Title = () => {
+import React from 'react';
+import './Title.css'; // agregar mis estilos!!!
+
+const Title = ({ nombre }) => {
     return (
-        <div>
-            Soy un Titulo
+        <div className='title-container'>
+            <label className='title-label'> { nombre } </label>
         </div>
     )
 };
